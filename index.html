@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Image recognition</title>
+    <p>draw a person in ur fam of 4 and show in webcam</p>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    <h2>FACE RECOGNITION WEB APP(lets u see wether u goodlookin or actually ugly and u get to see your fam's truth BD)</h2>
+
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+        <h3 class="btn btn-primary">Father(he forgot his milk so he left u)</h3>
+        <br>
+        <h3 class="btn btn-primary">Mother(she sick of u, u are adopted)</h3>
+        <br>
+        <h3 class="btn btn-primary">Brother(he hates u and u hate him but u both are overprotective of eachother)</h3>
+        <br>
+        <h3 class="btn btn-primary">Sister(the real adopted kid)</h3>
+        <br><br>
+      <label>Webcam View (coders note:you beautiful:0)- </label>
+        <div id="camera"></div>
+      <br><br>
+        <div id="result"></div>
+      <br><br>
+          <button onclick="take_snapshot()" class="btn btn-info">Capture Image</button>
+      <br><br>
+          <button onclick="check()" class="btn btn-success">Identify Image(coders note:nvm u ugly :/)</button>
+      <br><br>
+
+      <p style="font-size: 22px;">Object : <span id="result_of_objects"></span> </p>
+      <p style="font-size: 22px;">Accuracy : <span id="result_of_accuracy"></span> </p>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
